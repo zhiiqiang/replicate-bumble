@@ -2,7 +2,7 @@ import React from "react";
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <div className="text-red-500">
       This is home
     </div>
   )
