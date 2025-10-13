@@ -1,14 +1,14 @@
 import React from "react";
+import { Outlet } from "react-router-dom"
 import { FooterHome } from "../components/home/FooterHome";
 
-const Home: React.FC = () => {
+export const Homelayout : React.FC = () => {
   return (
     <div>
-      <div className="text-red-500">
-        This is home
-      </div>
+      <main>
+        <Outlet />
+      </main>
       <FooterHome />
     </div>
   )
 }
-export default Home;
