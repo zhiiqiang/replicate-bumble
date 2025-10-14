@@ -7,6 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
     clean: true,
+    assetModuleFilename: "images/[name][hash][ext][query]",
   },
   resolve: {
     extensions: [".js", ".ts", ".tsx"],
@@ -22,6 +23,13 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader", "postcss-loader"],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "images/[name][hash][ext][query]",
+        },
+      },
     ],
   },
   plugins: [
@@ -33,7 +41,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     static: {
-      directory: path.join(__dirname, "dist"),
+      directory: path.join(__dirname, "public"),
     },
     compress: true,
     port: 3000,

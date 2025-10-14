@@ -1,3 +1,32 @@
 {
-  "welcome": "Bumbe Date"
+  "appTitle": "Bumble",
+  "footer": {
+    "urlSection": {
+      "title": {
+        "ourApps": "Our Apps",
+        "company": "Company",
+        "legal": "Legal"
+      },
+      "description": {
+        "bumbleDate": "Bumble Date",
+        "bff": "BFF",
+        "badoo": "Badoo",
+        "about": "About",
+        "careers": "Careers",
+        "contact": "Contact Us",
+        "investor": "Investors",
+        "shop": "The Shop",
+        "support": "Support",
+        "buzz": "The Buzz",
+        "guideliness": "Guideliness",
+        "cookies": "Manage cookies",
+        "policy": "Privacy Policy",
+        "tnc": "Terms and conditions",
+        "accesibility": "Accessibility at Bumble",
+        "notice": "Notice at collection",
+        "modern": "Modern Slavery act",
+        "washington": "Washington Consumer Health Privacy Policy"
+      }
+    }
+  }
 }
